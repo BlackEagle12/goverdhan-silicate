@@ -1,37 +1,37 @@
-*{
+* {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-nav{
+nav {
     height: 100px;
-    background-color: rgb(153, 153, 227);
+    background-color: #cde7d5;
 }
 
-.d-felx{
+.d-felx {
     display: flex;
 }
 
-.nav-logo-parent{
+.nav-logo-parent {
     justify-content: center;
     align-items: center;
     height: 100px;
     width: 350px;
 }
 
-.nav-logo{
+.nav-logo {
     height: 70px;
     margin: 0 20px;
 }
 
-.menu-container{
+.menu-container {
     justify-content: flex-end;
     align-items: center;
     width: 100%;
 }
 
-.menu{
+.menu {
     font-size: 15px;
     font-weight: bolder;
     height: 30px;
@@ -41,7 +41,8 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.slider{
+
+.slider {
     width: 100%;
     height: calc(100vh - 105px);
     background-image: url("../photos/slider/sd-1.jpg");
@@ -52,7 +53,7 @@ nav{
     padding: 5px 0;
 }
 
-.circel{
+.circel {
     border: solid black 6px;
     width: 20px;
     height: 20px;
@@ -60,11 +61,11 @@ nav{
     margin: 5px;
 }
 
-.bgBlack{
-    background-color:  rgb(153, 153, 227);
+.bgBlack {
+    background-color: rgb(184, 204, 167);
 }
 
-.section{
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,42 +73,43 @@ nav{
     padding: 4vw 10vw;
 }
 
-.underline{
+.underline {
     height: 30px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
-.section-title .first{
+.section-title .first {
     width: 90px;
 }
 
-.section-title .second{
+.section-title .second {
     width: 50px;
     align-self: center;
 }
 
-.section-title .third{
+.section-title .third {
     width: 90px;
     align-self: flex-end;
 }
 
-.section-title:hover .first{
+.section-title:hover .first {
     align-self: center;
 }
 
-.section-title:hover .third{
+.section-title:hover .third {
     align-self: center;
 }
 
-.welcome-section{
+.welcome-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
-.welcome-menu{
+
+.welcome-menu {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -115,7 +117,7 @@ nav{
     padding-left: 5vw;
 }
 
-.menu-item{
+.menu-item {
     padding: 10px 7px;
     border-left: 3px solid #717279;
     font-size: 20px;
@@ -123,21 +125,21 @@ nav{
     color: #717279;
 }
 
-.menu-item:hover{
+.menu-item:hover {
     border-left: 3px solid red;
     color: red;
 }
 
-.active-menu{
+.active-menu {
     color: red;
     border-left: 3px solid red;
 }
 
-.diplayNone{
+.diplayNone {
     display: none;
 }
 
-.product-higlight{
+.product-higlight {
     display: flex;
     margin-top: 20px;
     width: 80vw;
@@ -145,7 +147,7 @@ nav{
     height: 400px;
 }
 
-.product-slider{
+.product-slider {
     width: 50%;
     display: flex;
     align-items: center;
@@ -153,58 +155,63 @@ nav{
     border-right: 2px solid black;
 }
 
-.product-slider img{
+.product-slider img {
     width: 100%;
     height: 100%;
 }
 
-.product-List{
+.product-List {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-.footer{
+.product-item {
+    padding: 15px 15px;
+}
+
+.footer {
     display: flex;
     justify-content: space-evenly;
-    background-image:url("../photos/footer/footer-bg.png");
-    background-color: rgb(153, 153, 227);
+    background-image: url("../photos/footer/footer-bg.png");
+    background-color: #cdece1;
     padding: 100px 0;
     color: #cccccc;
-    
+
 }
 
-.contact-section{
+.contact-section {
     display: flex;
     margin: 20px 0;
 }
 
-.contact-section .icon{
+.contact-section .icon {
     margin: 5px 20px;
     font-size: 20px;
 }
 
-.contact-section .description{
+.contact-section .description {
     font-size: 13px;
     font-weight: 900;
     line-height: 25px;
     letter-spacing: 1px;
 }
 
-.quick-link{
+.quick-link {
     font-weight: 900;
     padding: 10px;
     letter-spacing: 1px;
     display: flex;
 }
 
-.quick-link .icon{
+.quick-link .icon {
     margin: 2px 5px;
     font-size: 15px;
 }
 
-.quick-link .description{
+.quick-link .description {
     font-size: 16px;
     font-weight: 900;
     line-height: 25px;
@@ -212,7 +219,7 @@ nav{
 }
 
 
-.footer .product .description{
+.footer .product .description {
     font-size: 16px;
     font-weight: 900;
     line-height: 25px;
