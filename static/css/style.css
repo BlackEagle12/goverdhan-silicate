@@ -136,3 +136,85 @@ nav{
 .diplayNone{
     display: none;
 }
+
+.product-higlight{
+    display: flex;
+    margin-top: 20px;
+    width: 80vw;
+    border: 2px solid black;
+    height: 400px;
+}
+
+.product-slider{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-slider img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-List{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-image:url("../photos/footer/footer-bg.png");
+    background-color: rgb(153, 153, 227);
+    padding: 100px 0;
+    color: #cccccc;
+    
+}
+
+.contact-section{
+    display: flex;
+    margin: 20px 0;
+}
+
+.contact-section .icon{
+    margin: 5px 20px;
+    font-size: 20px;
+}
+
+.contact-section .description{
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.quick-link{
+    font-weight: 900;
+    padding: 10px;
+    letter-spacing: 1px;
+    display: flex;
+}
+
+.quick-link .icon{
+    margin: 2px 5px;
+    font-size: 15px;
+}
+
+.quick-link .description{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+
+.footer .product .description{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}

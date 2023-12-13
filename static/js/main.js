@@ -1,6 +1,8 @@
 var currentImage = 1;
+var productSilderImages = [2,3,4,5];
+var currentProductSilderImage = 0
 
-changeImage = () => {
+changeSliderImage = () => {
     var slider = document.getElementById("slider");
 
     var circelimg = document.getElementById("circelimg" + currentImage);
@@ -14,8 +16,18 @@ changeImage = () => {
 
     slider.style.backgroundImage = "url('static/photos/slider/sd-" + imgNo + ".jpg')";
 }
+
+changeProductSliderImage = () => {
+    console.log("called");
+    var img = document.getElementById("productSlider");
+    img.src = "static/photos/Products/" + productSilderImages[currentProductSilderImage++] + ".jpg"
+    if(currentProductSilderImage == 4)
+    currentProductSilderImage = 0;
+}
+
 window.onload = (event) => {
-    setInterval(changeImage,1000);
+    setInterval(changeSliderImage,1000);
+    setInterval(changeProductSliderImage, 2000);
 };
 
 
