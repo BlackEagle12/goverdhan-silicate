@@ -311,7 +311,7 @@ dl {
 }
 
 .product-List1 {
-    display: block;
+    display: inline;
     margin: 25px;
 
 
@@ -341,4 +341,52 @@ dl {
 
 .P-image5 {
     padding-left: 30%;
+}
+
+.contact-section {
+    position: relative;
+    min-height: 1px;
+    padding-left: 20%;
+    padding-right: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    background-color: darkcyan;
+}
+
+.section-title {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.conh1 {
+    text-align: center;
+}
+
+.contact-details {
+    padding: 30px;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.icon-con {
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
 }
