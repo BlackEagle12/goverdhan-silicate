@@ -296,13 +296,13 @@ dl {
 
 } */
 
-.vl {
+/* .vl {
     border-left: 6px solid #c7ceae;
     height: 1500px;
     position: relative;
     left: 50%;
     padding: 10px 10px;
-}
+} */
 
 .product-main {
     display: flex;
