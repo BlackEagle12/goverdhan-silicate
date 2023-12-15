@@ -42,6 +42,10 @@ nav {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .slider {
     width: 100%;
     height: calc(100vh - 105px);
@@ -225,4 +229,196 @@ nav {
     line-height: 25px;
     letter-spacing: 1px;
     margin: 10px 0px;
+}
+
+/* .content-holder {
+    --doc-height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    clear: both;
+    padding: 0 0 20px 0;
+    font-size: 120%;
+    background: #f5f5f5 !important;
+    padding-bottom: 12px;
+    padding-top: 24px;
+}
+
+
+.content_holder {
+    font-size: 120%;
+}
+
+.sub_holder {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.cd-timeline {
+    overflow: hidden;
+    margin: 2em auto;
+}
+
+.card {
+
+    display: block;
+    background: #fff;
+    margin-bottom: 24px;
+    text-decoration: none;
+    box-shadow: 0 0 12px #ddd;
+}
+
+.card .card_contents {
+    padding: 10px;
+    position: relative;
+}
+@media only screen and (max-width: 959px) .submenu_holder {
+    display: block;
+}
+
+.submenu_holder {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    padding: 24px !important;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+/* 
+.product-List1 {
+  display: flex;
+
+} */
+
+/* .vl {
+    border-left: 6px solid #c7ceae;
+    height: 1500px;
+    position: relative;
+    left: 50%;
+    padding: 10px 10px;
+} */
+
+.product-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.product-List1 {
+    display: inline;
+    margin: 25px;
+
+
+
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.P-image1 {
+    /* flex-direction: row-reverse; */
+    padding-left: 30%;
+}
+
+.P-image2 {
+    /* align-items: flex-end;
+    flex-direction: row-reverse; */
+    padding-left: 170%;
+}
+
+.P-image3 {
+    padding-left: 30%;
+}
+
+.P-image4 {
+    padding-left: 170%;
+}
+
+.P-image5 {
+    padding-left: 30%;
+}
+
+.contact-section {
+    position: relative;
+    min-height: 1px;
+    padding-left: 20%;
+    padding-right: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+p {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    background-color: #d5d8d8;
+}
+
+.section-title {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.conh1 {
+    text-align: center;
+}
+
+.contact-details {
+    padding: 30px;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.icon-con {
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+}
+
+.contact-form {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 20px 20px;
+}
+
+.msg {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.row {
+    padding: 20px 20px;
+    padding-left: 20%;
+    margin: 20px 20px;
+    text-align: justify;
+}
+
+
+.col-lg-6 {
+    display: block;
+    padding: 10px;
+}
+
+.col-lg-12 {
+    display: block;
+    padding: 10px;
 }
