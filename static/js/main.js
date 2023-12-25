@@ -45,9 +45,4 @@ changeMenuItem = (activeItem) => {
 
     item = document.getElementById("menuItemSection" + activeItem);
     item.classList.remove("diplayNone");
-
 }
-
-
-
-  
