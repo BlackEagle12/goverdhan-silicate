@@ -466,7 +466,7 @@ input[type=number] {
 
 .about-us-sub-content-img{
     width: 50%;
-    background-image: url("/static/photos/Factory/4.jpg");
+    background-image: url("../photos/Factory/4.jpg");
     margin: 1%;
 }
 
@@ -496,7 +496,7 @@ input[type=number] {
 }
 
 .mission{
-    background: url("/static/photos/core-values/mission.jpg") rgba(43, 43, 43, 0.76);
+    background: url("../photos/core-values/mission.jpg") rgba(43, 43, 43, 0.76);
     background-blend-mode: multiply;
     background-size: cover;
     opacity: 0.7;
@@ -520,7 +520,7 @@ input[type=number] {
 }
 
 .vision{
-    background: url("/static/photos/core-values/vission.jpg") rgba(43, 43, 43, 0.76);
+    background: url("../photos/core-values/vission.jpg") rgba(43, 43, 43, 0.76);
     background-blend-mode: multiply;
     background-size: cover;
     opacity: 0.7;
@@ -544,7 +544,7 @@ input[type=number] {
 }
 
 .env{
-    background: url("/static/photos/core-values/env.jpg") rgba(43, 43, 43, 0.76);
+    background: url("../photos/core-values/env.jpg") rgba(43, 43, 43, 0.76);
     background-blend-mode: multiply;
     background-size: cover;
     opacity: 0.7;
