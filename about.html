@@ -14,11 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="static/js/main.js"></script>
     <script src="static/js/about.js"></script>
+    <script src="static/js/common.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="d-felx">
             <div class="nav-logo-parent d-felx">
                 <img class="nav-logo" src="static/photos/logos/logo.svg">
@@ -33,6 +35,16 @@
                 <div class="menu">
                     <a href="blog.html">Blog</a>
                 </div>
+                <div class="menu extendable">
+                    <a href="">Products</a>&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="submenu">
+                        <a href="Sodium Silicate Liquid.html">Sodium Silicate Liquid</a>
+                        <a href="Sodium Silicate Glass (Lump/Cullet).html">Sodium Silicate Glass (Lump/Cullet)</a>
+                        <a href="Sodium Metasilicate Nonahydrate.html">Sodium Metasilicate Nonahydrate</a>
+                        <a href="Sodium Metasilicate Pentahydrate.html">Sodium Metasilicate Pentahydrate</a>
+                        <a href="Sodium Silicate Powder.html">Sodium Silicate Powder</a>
+                    </div>
+                </div>
                 <div class="menu">
                     <a href="about.html">About US</a>
                 </div>
@@ -44,7 +56,7 @@
     </nav>
 
     <div class="about-us-container">
-        <div class="section">
+        <div class="section animation-translate-y-animate-down">
             <div class="section-title">
                 <h1>WHO WE ARE</h1>
     
@@ -58,8 +70,8 @@
 
         <div class="about-us-main-content">
             <div class="about-us-sub-content">
-                <div class="about-us-sub-content-img"></div>
-                <div class="about-us-sub-content-desc">
+                <div class="about-us-sub-content-img animation-translate-x-animate-right"></div>
+                <div class="about-us-sub-content-desc animation-translate-x-animate-left">
                     <div class="section" style="padding: 1%;">
                         <div class="section-title">
                             <h1>Quality</h1>
@@ -72,27 +84,27 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us-main-content-desc">
+            <div class="about-us-main-content-desc animation-translate-x-animate-right">
                 <p>Lorem, ipsum dolor sit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum vero laboriosam quia dignissimos, nobis excepturi modi labore similique consectetur? Totam. amet consectetur adipisicing elit. At quos doloremque dolore velit illo obcaecati quisquam ducimus vero ratione? Magnam quae unde recusandae vitae accusamus iusto quibusdam tempore ducimus id nisi? Ullam laboriosam, dignissimos alias soluta rem libero, quos rerum similique debitis dolorem esse accusamus adipisci. Vero debitis fugit velit cum amet, molestias rem voluptatibus sint numquam corporis expedita, quos, asperiores ab beatae nemo eos veritatis maxime quaerat. Placeat, totam repellat sit nesciunt vero corrupti atque architecto distinctio est non mollitia ab aspernatur doloribus pariatur vitae quas culpa ut reprehenderit explicabo qui fugiat labore quo fugit? Cum aliquam possimus vero?</p>
             </div>
         </div>
 
         <div class="about-us-achievement">
-            <div class="about-us-achievement-card">
+            <div class="about-us-achievement-card animation-translate-x-animate-right">
                 <div class="about-us-achievement-info">
                     <div id="yearsCounter" class="about-us-achievement-number" onfocus="changeNumber(15, this)">15+</div>
                     <div class="about-us-achievement-desc">Years of Experience</div>
                 </div>
                 <div class="about-us-achievement-card-box"></div>
             </div>
-            <div class="about-us-achievement-card"> 
+            <div class="about-us-achievement-card animation-translate-y-animate-down"> 
                 <div class="about-us-achievement-info">
                     <div class="about-us-achievement-number">200+</div>
                     <div class="about-us-achievement-desc">Happy Total Clients</div>
                 </div>
                 <div class="about-us-achievement-card-box"></div>
             </div>
-            <div class="about-us-achievement-card">
+            <div class="about-us-achievement-card animation-translate-x-animate-left">
                 <div class="about-us-achievement-info">
                     <div class="about-us-achievement-number">7+</div>
                     <div class="about-us-achievement-desc">Countries we serve</div>
@@ -102,9 +114,9 @@
         </div>
 
         <div class="about-us-values">
-            <div class="about-us-values-card mission"><h1>OUR MISSION</h1></div>
-            <div class="about-us-values-card vision"> <h1>OUR VISION</h1></div>
-            <div class="about-us-values-card env"> <h1>ECO FRIENDLY</h1></div>
+            <div class="about-us-values-card mission animation-translate-x-animate-right"><h1>OUR MISSION</h1></div>
+            <div class="about-us-values-card vision animation-translate-y-animate-down"> <h1>OUR VISION</h1></div>
+            <div class="about-us-values-card env animation-translate-x-animate-left"> <h1>ECO FRIENDLY</h1></div>
         </div>        
     </div>    
     <footer class="footer">

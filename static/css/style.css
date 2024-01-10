@@ -2,11 +2,23 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 nav {
     height: 100px;
-    background-color: #cde7d5;
+    width: 100vw;
+    transition-duration: 1s;    
+    padding: 0 20px;
+    background-color: transparent;
+}
+
+.nav-scroll{
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
+    z-index: 2;
+    position: fixed;
+
 }
 
 .d-felx {
@@ -42,12 +54,13 @@ nav {
     height: 100px;
 }
 
-.menu:hover, .submenu{
-    background-color: #b6e0c3;
+.menu:hover a{
+    color: blue;
 }
 
 a {
     text-decoration: none;
+    color: chocolate;
 }
 
 .submenu{
@@ -82,17 +95,44 @@ a {
     background-image: url("../photos/slider/sd-1.jpg");
     background-size: cover;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 5px 0;
 }
+
+.slider{
+    .wlcm-msg{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: whitesmoke;
+        .main{
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        .sub{
+            font-size: 20px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+        &:hover{
+            color: chocolate;
+        }
+    }
+}
+
 
 .circel {
     border: solid black 6px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 15px 5px;
+    display: inline-block;
 }
 
 .bgBlack {
@@ -176,15 +216,10 @@ a {
     border-left: 3px solid red;
 }
 
-.diplayNone {
-    display: none;
-}
-
 .product-higlight {
     display: flex;
     margin-top: 20px;
     width: 80vw;
-    border: 2px solid black;
     height: 400px;
 }
 
@@ -193,7 +228,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid black;
+    border: 2px solid black;
+    margin: 10px 50px;
 }
 
 .product-slider img {
@@ -206,11 +242,33 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin: 10px 50px;
+    border: 2px solid black;
 }
 
 .product-item {
     padding: 15px 15px;
+}
+
+.client-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 100px;
+    overflow: auto;
+}
+
+.client-logo{
+    height: 80px;
+    background-size: auto;
+    box-shadow: rgb(179, 191, 245) 20px 30px 30px -10px;
+    margin: 50px 20px;
+    min-width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -278,9 +336,12 @@ a {
 .product-container .product{
     display: flex;
     width: 40vw;
-    border: 1px solid black ;
     min-width: 530px;
     margin: 0px 20px;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
+    border-radius: 5px;
+    background-size: cover;
+    margin: 60px;
 }
 
 .empty-product{
@@ -293,12 +354,17 @@ a {
 .product-container .product .p-image{
     width: 280px;
     background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    transition-duration: 1s;
 }
 
 .product-container .product .p-desc{
     width: 250px;
     padding: 10px;
     text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .product-container-row{
@@ -308,13 +374,11 @@ a {
 }
 
 .product-perent{
-    border-right: 5px solid green;
     display: flex;
     align-items: center;
 }
 
 .product-perent-even{
-    border-left: 5px solid green;
     display: flex;
     align-items: center;
 }
@@ -493,13 +557,16 @@ input[type=number] {
     align-items: center;
     color: white;
     border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
+    margin-bottom: 50px;
 }
 
 .mission{
     background: url("../photos/core-values/mission.jpg") rgba(43, 43, 43, 0.76);
     background-blend-mode: multiply;
     background-size: cover;
-    opacity: 0.7;
+    transition-duration: 1s;
+    
 }
 
 .mission:hover{
@@ -523,7 +590,7 @@ input[type=number] {
     background: url("../photos/core-values/vission.jpg") rgba(43, 43, 43, 0.76);
     background-blend-mode: multiply;
     background-size: cover;
-    opacity: 0.7;
+    transition-duration: 1s;
 }
 
 .vision:hover{
@@ -547,7 +614,7 @@ input[type=number] {
     background: url("../photos/core-values/env.jpg") rgba(43, 43, 43, 0.76);
     background-blend-mode: multiply;
     background-size: cover;
-    opacity: 0.7;
+    transition-duration: 1s;
 }
 
 .env:hover{
@@ -597,4 +664,37 @@ input[type=number] {
 .about-us-achievement-desc{
     font-weight: 900;
     letter-spacing: 1px;
+}
+
+/* animation css */
+[class*="animation-"] {
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+
+.animation-translate-y-animate-up{
+    transform: translatey(90%);
+}
+
+.animation-translate-y-animate-down{
+    transform: translatey(-90%);
+}
+
+.translate-y-animation-trigger{
+    transform: translatey(0);
+}
+
+.animation-translate-x-animate-left{
+    transform: translatex(90%);
+}
+
+.animation-translate-x-animate-right{
+    transform: translatex(-90%);
+}
+.translate-x-animation-trigger{
+    transform: translatex(0);
+}
+.displayNone {
+    display: none;
 }

@@ -7,18 +7,19 @@
     <title>Govwerdhan Silicate</title>
     <link rel="icon" href="static/photos/logos/logo.svg" />
     <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
     <script src="static/js/main.js"></script>
+    <script src="static/js/common.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="d-felx">
             <div class="nav-logo-parent d-felx">
                 <img class="nav-logo" src="static/photos/logos/logo.svg">
@@ -52,15 +53,21 @@
             </div>
         </div>
     </nav>
-    <div id="slider" class="slider">
-        <div id="circelimg1" class="circel bgBlack"></div>
-        <div id="circelimg2" class="circel"></div>
-        <div id="circelimg3" class="circel"></div>
+    <div id="slider" class="slider animation-translate-y-animate-down">
+        <div class="wlcm-msg">
+            <p class="main">Welcome to goverdhan silicate</p>
+            <p class="sub">manufacturer of Sodium silicate glass(Lamp/Cullet)</p>
+        </div>
+        <div style="overflow: hidden;">
+            <div id="circelimg1" class="circel bgBlack"></div>
+            <div id="circelimg2" class="circel"></div>
+            <div id="circelimg3" class="circel"></div>
+        </div>
     </div>
 
 
     <div class="welcome-section">
-        <div class="welcome-menu">
+        <div class="welcome-menu animation-translate-x-animate-right">
 
             <div id="menuItem1" class="menu-item active-menu" onclick="changeMenuItem(1)">
                 Introduction
@@ -70,7 +77,7 @@
             </div>
         </div>
         <div id="menuItemSection1" class="section">
-            <div class="section-title">
+            <div class="section-title animation-translate-y-animate-up">
                 <h1>Introduction</h1>
 
                 <div class="underline">
@@ -80,7 +87,7 @@
                 </div>
             </div>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
+            <p class="animation-translate-x-animate-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
                 laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
                 minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
                 iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
@@ -89,7 +96,7 @@
                 molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
                 quo ex exercitationem maxime corrupti hic ea.</p>
         </div>
-        <div id="menuItemSection2" class="section diplayNone">
+        <div id="menuItemSection2" class="section displayNone">
             <div class="section-title">
                 <h1>Quality</h1>
 
@@ -100,7 +107,7 @@
                 </div>
             </div>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
+            <p class="animation-translate-x-animate-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
                 laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
                 minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
                 iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
@@ -113,7 +120,7 @@
 
     <!-- product section -->
     <div id="menuItemSection1" class="section">
-        <div class="section-title">
+        <div class="section-title animation-translate-y-animate-down">
             <h1>Products</h1>
 
             <div class="underline">
@@ -124,10 +131,10 @@
         </div>
 
         <div class="product-higlight">
-            <div class="product-slider">
+            <div class="product-slider animation-translate-x-animate-right">
                 <img id="productSlider" src="static/photos/Products/2.jpg">
             </div>
-            <div class="product-List">
+            <div class="product-List animation-translate-x-animate-left">
                 <ul>
                     <p class="product-item">Sodium Silicate Liquid</p>
                     <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
@@ -137,10 +144,24 @@
                 </ul>
             </div>
         </div>
-
     </div>
+
+    <div class="client-logo-container">
+        <div class="left-arrow"> < </div>
+        <div class="client-logo displayNone"> <img class="nav-logo" src="static/photos/logos/logo.svg"> </div>
+        <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> </div>
+        <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> </div>
+        <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> </div>
+        <div class="client-logo displayNone"> <img class="nav-logo" src="static/photos/logos/logo.svg"> </div>
+        <div class="right-arrow"> > </div>
+    </div>
+
+    <div>
+        our partners
+    </div>
+
     <footer class="footer">
-        <div class="section-title">
+        <div class="section-title animation-translate-y-animate-up">
             <h4>KEEP IN TOUNCH</h4>
 
             <div class="underline">
@@ -176,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-title">
+        <div class="section-title animation-translate-y-animate-up">
             <h4>QUICK LINKS</h4>
 
             <div>
@@ -226,14 +247,14 @@
                 </div>
             </div>
         </div>
-        <div class="section-title">
+        <div class="section-title animation-translate-y-animate-up">
             <h4>OUR PRODUCTS</h4>
 
             <div class="underline">
                 <hr class="second" />
             </div>
 
-            <div class="product">
+            <div class="product ">
 
                 <ul>
                     <li>

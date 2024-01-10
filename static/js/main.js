@@ -18,7 +18,6 @@ changeSliderImage = () => {
 }
 
 changeProductSliderImage = () => {
-    console.log("called");
     var img = document.getElementById("productSlider");
     img.src = "static/photos/Products/" + productSilderImages[currentProductSilderImage++] + ".jpg"
     if(currentProductSilderImage == 4)
@@ -28,6 +27,10 @@ changeProductSliderImage = () => {
 window.onload = (event) => {
     setInterval(changeSliderImage,1000);
     setInterval(changeProductSliderImage, 2000);
+    addIntersectionObserver('.animation-translate-y-animate-up', 'translate-y-animation-trigger');
+    addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
+    addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
+    addIntersectionObserver('.animation-translate-x-animate-left', 'translate-x-animation-trigger');
 };
 
 
@@ -41,8 +44,48 @@ changeMenuItem = (activeItem) => {
     item.classList.remove("active-menu");
     
     item = document.getElementById("menuItemSection" + deactivateItem);
-    item.classList.add("diplayNone");
+    item.classList.add("displayNone");
 
     item = document.getElementById("menuItemSection" + activeItem);
-    item.classList.remove("diplayNone");
+    item.classList.remove("displayNone");
+}
+
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .01
+  }
+
+
+const addIntersectionObserver = (selector,trigger) => {
+    const elements = document.querySelectorAll(selector);
+    console.log(selector,trigger);
+    console.log(elements);
+    const callbacks = (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            entry.target.classList.add(trigger);
+          }
+        });
+      }
+    
+    let observer = new IntersectionObserver(callbacks, options);
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+}
+
+const clientLogoSlide = () => {
+    const elements = document.querySelectorAll("client-logo")
+    let toDisableIndex = 0;
+    for (let index = 0; index < elements.length; index++) {
+        const element = array[index];
+        if(!element.classList.contains("displayNone"))
+        {
+            toDisableIndex = index;
+            break; 
+        }   
+    }
+
+    const toEnableIndex = toDisableIndex + 3
 }

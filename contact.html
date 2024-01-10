@@ -16,10 +16,11 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="static/js/main.js"></script>
+    <script src="static/js/common.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="d-felx">
             <div class="nav-logo-parent d-felx">
                 <img class="nav-logo" src="static/photos/logos/logo.svg">
@@ -34,6 +35,16 @@
                 <div class="menu">
                     <a href="blog.html">Blog</a>
                 </div>
+                <div class="menu extendable">
+                    <a href="">Products</a>&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="submenu">
+                        <a href="Sodium Silicate Liquid.html">Sodium Silicate Liquid</a>
+                        <a href="Sodium Silicate Glass (Lump/Cullet).html">Sodium Silicate Glass (Lump/Cullet)</a>
+                        <a href="Sodium Metasilicate Nonahydrate.html">Sodium Metasilicate Nonahydrate</a>
+                        <a href="Sodium Metasilicate Pentahydrate.html">Sodium Metasilicate Pentahydrate</a>
+                        <a href="Sodium Silicate Powder.html">Sodium Silicate Powder</a>
+                    </div>
+                </div>
                 <div class="menu">
                     <a href="about.html">About US</a>
                 </div>
@@ -44,7 +55,7 @@
         </div>
     </nav>
     <div class="contact-us">
-        <div class="section-title">
+        <div class="section-title animation-translate-y-animate-down">
             <h2>GET IN TOUCH WITH US</h2>
 
             <div class="underline">
@@ -52,11 +63,11 @@
                 <hr class="second" />
                 <hr class="third" />
             </div>
-            <p class="conh1">If you feel like I’m the man for the job, let’s drop a line to me!</p>
+            <p class="conh1 animation-translate-x-animate-left">If you feel like I’m the man for the job, let’s drop a line to me!</p>
         </div>
 
         <div class="contact-info">
-            <div class="contact-details">
+            <div class="contact-details animation-translate-x-animate-right">
                 <div class="icon">
                     <i class="fa-solid fa-phone"></i>
                 </div>
@@ -64,7 +75,7 @@
                 <p>Export : +91 97127 96836</p>
             </div>
 
-            <div class="contact-details">
+            <div class="contact-details animation-translate-y-animate-down">
                 <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
@@ -72,7 +83,7 @@
                     sales@ankitsilicate.com</p>
             </div>
 
-            <div class="contact-details">
+            <div class="contact-details animation-translate-x-animate-left">
                 <div class="icon">
                     <i class="fa-solid fa-map-location-dot"></i>
                 </div>
@@ -92,24 +103,24 @@
                 <form>
     
                     <div class="basic-info">
-                        <input type="text" placeholder="Name" required>
-                        <input type="tel" placeholder="Phone">
+                        <input type="text" class="animation-translate-x-animate-right" placeholder="Name" required>
+                        <input type="tel" class="animation-translate-x-animate-right" placeholder="Phone">
                     </div>
-                    <div class="input-email">
+                    <div class="input-email animation-translate-x-animate-right">
                         <input type="email" placeholder="Email" required>
                     </div>
-                    <div>
+                    <div class="animation-translate-x-animate-right">
                         <textarea placeholder="Message" required></textarea>
                     </div>
                     <div class="captcha">
-                        <div class="g-recaptcha" data-sitekey="6LfhFDspAAAAAElmAzZY7e8akzWXDPJkP0HXH6fH"></div>
+                        <div class="g-recaptcha animation-translate-x-animate-right" data-sitekey="6LfhFDspAAAAAElmAzZY7e8akzWXDPJkP0HXH6fH"></div>
                     </div>
-                    <input type="submit" value="Send Message">
+                    <input type="submit" class="animation-translate-x-animate-right" value="Send Message">
                 </form>
             </div>
         </div>
         
-        <div class="google-map">
+        <div class="google-map animation-translate-x-animate-left">
             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14709.726326976617!2d70.84767059999999!3d22.8235169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ5JzE1LjQiTiA3MMKwNTEnMTYuOSJF!5e0!3m2!1sen!2sin!4v1703411025323!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
