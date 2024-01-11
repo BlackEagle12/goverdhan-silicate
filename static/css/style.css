@@ -99,6 +99,7 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 5px 0;
+    transition: all 0.5s ease-in-out
 }
 
 .slider{
@@ -269,6 +270,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.5s ease-in-out;
 }
 
 .footer {

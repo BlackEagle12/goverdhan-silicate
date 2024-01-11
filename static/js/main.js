@@ -27,6 +27,7 @@ changeProductSliderImage = () => {
 window.onload = (event) => {
     setInterval(changeSliderImage,1000);
     setInterval(changeProductSliderImage, 2000);
+    setInterval(slideClientLogo(1),2000);
     addIntersectionObserver('.animation-translate-y-animate-up', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
@@ -59,8 +60,6 @@ const options = {
 
 const addIntersectionObserver = (selector,trigger) => {
     const elements = document.querySelectorAll(selector);
-    console.log(selector,trigger);
-    console.log(elements);
     const callbacks = (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting){
@@ -75,17 +74,29 @@ const addIntersectionObserver = (selector,trigger) => {
     });
 }
 
-const clientLogoSlide = () => {
-    const elements = document.querySelectorAll("client-logo")
-    let toDisableIndex = 0;
-    for (let index = 0; index < elements.length; index++) {
-        const element = array[index];
+slideClientLogo = num => {
+    const elements = document.querySelectorAll(".client-logo")
+    console.log();
+    elements.forEach( (element,index) => {
         if(!element.classList.contains("displayNone"))
         {
-            toDisableIndex = index;
-            break; 
+            console.log(index+num);
+            element.classList.add("displayNone");
+            if(index + num > elements.length - 1)
+            {
+                console.log(87);
+                elements[0].classList.remove("displayNone");
+            }
+            else if(index + num < 0)
+            {
+                console.log(92);
+                elements[elements.length - 1].classList.remove("displayNone");
+            }
+            else
+            {
+                console.log(97);
+                elements[index + num].classList.remove("displayNone");
+            }
         }   
-    }
-
-    const toEnableIndex = toDisableIndex + 3
+    });
 }
