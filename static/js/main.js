@@ -27,7 +27,7 @@ changeProductSliderImage = () => {
 window.onload = (event) => {
     setInterval(changeSliderImage,1000);
     setInterval(changeProductSliderImage, 2000);
-    setInterval(slideClientLogo(1),2000);
+    setInterval(slideClientLogo,2000,1);
     addIntersectionObserver('.animation-translate-y-animate-up', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
@@ -36,6 +36,7 @@ window.onload = (event) => {
 
 
 changeMenuItem = (activeItem) => {
+    
     let deactivateItem = (activeItem == 1 ? 2 : 1);
 
     var item = document.getElementById("menuItem" + activeItem);
@@ -75,28 +76,40 @@ const addIntersectionObserver = (selector,trigger) => {
 }
 
 slideClientLogo = num => {
-    const elements = document.querySelectorAll(".client-logo")
-    console.log();
-    elements.forEach( (element,index) => {
-        if(!element.classList.contains("displayNone"))
-        {
-            console.log(index+num);
-            element.classList.add("displayNone");
-            if(index + num > elements.length - 1)
-            {
-                console.log(87);
-                elements[0].classList.remove("displayNone");
-            }
-            else if(index + num < 0)
-            {
-                console.log(92);
-                elements[elements.length - 1].classList.remove("displayNone");
-            }
-            else
-            {
-                console.log(97);
-                elements[index + num].classList.remove("displayNone");
-            }
-        }   
-    });
+    const current = document.getElementById("render-client-logos");
+    const clientLogoList = document.getElementById("client-logo-list");
+
+    current.children[parseInt(current.children.length/2)].classList.remove("active-client-logo");
+    current.children[parseInt(current.children.length/2) - 1].classList.remove("sub-active-client-logo");
+    current.children[parseInt(current.children.length/2) + 1].classList.remove("sub-active-client-logo");
+    if(num > 0){
+        const element = current.children[0];
+        const nextElement = clientLogoList.children[0];
+        current.appendChild(nextElement)
+        clientLogoList.appendChild(element)
+    }
+    else
+    {
+        const element = current.children[current.children.length - 1];
+        const nextElement = clientLogoList.children[clientLogoList.children.length - 1];
+        current.insertBefore(nextElement, current.children[0])
+        clientLogoList.insertBefore(element, clientLogoList.children[0])
+    }
+    
+    current.children[parseInt(current.children.length/2)].classList.add("active-client-logo");
+    current.children[parseInt(current.children.length/2) - 1].classList.add("sub-active-client-logo");
+    current.children[parseInt(current.children.length/2) + 1].classList.add("sub-active-client-logo");
+
+    console.log('done');
 }
+
+window.addEventListener('scroll', () => {
+    const verticalScrollPx = window.scrollY || window.pageYOffset;
+  
+    if (verticalScrollPx > 50) {
+      document.getElementById('nav').classList.add('nav-scroll');
+    }
+    else {
+        document.getElementById('nav').classList.remove('nav-scroll');
+    }
+  });

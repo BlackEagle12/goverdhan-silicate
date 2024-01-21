@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="static/js/main.js"></script>
     <script src="static/js/common.js"></script>
 </head>
@@ -65,103 +71,144 @@
         </div>
     </div>
 
-
-    <div class="welcome-section">
-        <div class="welcome-menu animation-translate-x-animate-right">
-
-            <div id="menuItem1" class="menu-item active-menu" onclick="changeMenuItem(1)">
-                Introduction
-            </div>
-            <div id="menuItem2" class="menu-item" onclick="changeMenuItem(2)">
-                Quality
-            </div>
-        </div>
-        <div id="menuItemSection1" class="section">
-            <div class="section-title animation-translate-y-animate-up">
-                <h1>Introduction</h1>
-
-                <div class="underline">
-                    <hr class="first" />
-                    <hr class="second" />
-                    <hr class="third" />
-                </div>
-            </div>
-
-            <p class="animation-translate-x-animate-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
-                laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
-                minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
-                iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
-                est. Dicta inventore quisquam quasi nisi, obcaecati officiis aperiam vero praesentium neque ipsum
-                possimus voluptatum ab earum in fugiat facilis. Tenetur debitis expedita accusamus pariatur quibusdam,
-                molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
-                quo ex exercitationem maxime corrupti hic ea.</p>
-        </div>
-        <div id="menuItemSection2" class="section displayNone">
-            <div class="section-title">
-                <h1>Quality</h1>
-
-                <div class="underline">
-                    <hr class="first" />
-                    <hr class="second" />
-                    <hr class="third" />
-                </div>
-            </div>
-
-            <p class="animation-translate-x-animate-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
-                laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
-                minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
-                iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
-                est. Dicta inventore quisquam quasi nisi, obcaecati officiis aperiam vero praesentium neque ipsum
-                possimus voluptatum ab earum in fugiat facilis. Tenetur debitis expedita accusamus pariatur quibusdam,
-                molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
-                quo ex exercitationem maxime corrupti hic ea.</p>
-        </div>
-    </div>
-
     <!-- product section -->
-    <div id="menuItemSection1" class="section">
-        <div class="section-title animation-translate-y-animate-down">
-            <h1>Products</h1>
-
+    <div style="background-image: url('https://source.unsplash.com/user/c_v_r/1900x800'); background-repeat: no-repeat;
+    background-attachment: fixed;">
+        <div class="welcome-section">
+            <div class="welcome-menu animation-translate-x-animate-right">
+    
+                <div id="menuItem1" class="menu-item active-menu" onclick="changeMenuItem(1)">
+                    Introduction
+                </div>
+                <div id="menuItem2" class="menu-item" onclick="changeMenuItem(2)">
+                    Quality
+                </div>
+            </div>
+            <div id="menuItemSection1" class="section">
+                <div class="section-title animation-translate-y-animate-up" style="background-color: white;">
+                    <h1>Introduction</h1>
+    
+                    <div class="underline">
+                        <hr class="first" />
+                        <hr class="second" />
+                        <hr class="third" />
+                    </div>
+                </div>
+    
+                <p class="animation-translate-x-animate-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
+                    laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
+                    minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
+                    iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
+                    est. Dicta inventore quisquam quasi nisi, obcaecati officiis aperiam vero praesentium neque ipsum
+                    possimus voluptatum ab earum in fugiat facilis. Tenetur debitis expedita accusamus pariatur quibusdam,
+                    molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
+                    quo ex exercitationem maxime corrupti hic ea.</p>
+            </div>
+            <div id="menuItemSection2" class="section displayNone">
+                <div class="section-title">
+                    <h1>Quality</h1>
+    
+                    <div class="underline">
+                        <hr class="first" />
+                        <hr class="second" />
+                        <hr class="third" />
+                    </div>
+                </div>
+    
+                <p class="animation-translate-x-animate-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
+                    laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
+                    minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
+                    iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
+                    est. Dicta inventore quisquam quasi nisi, obcaecati officiis aperiam vero praesentium neque ipsum
+                    possimus voluptatum ab earum in fugiat facilis. Tenetur debitis expedita accusamus pariatur quibusdam,
+                    molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
+                    quo ex exercitationem maxime corrupti hic ea.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title animation-translate-y-animate-down">
+                <h1>Products</h1>
+    
+                <div class="underline">
+                    <hr class="first" />
+                    <hr class="second" />
+                    <hr class="third" />
+                </div>
+            </div>
+    
+            <div class="product-higlight">
+                <div class="product-slider animation-translate-x-animate-right">
+                    <img id="productSlider" src="static/photos/Products/2.jpg">
+                </div>
+                <div class="product-List animation-translate-x-animate-left">
+                    <ul>
+                        <p class="product-item">Sodium Silicate Liquid</p>
+                        <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
+                        <p class="product-item">Sodium Metasilicate Nonahydrate</p>
+                        <p class="product-item">Sodium Metasilicate Pentahydrate</p>
+                        <p class="product-item">Sodium Silicate Powder</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="section-title animation-translate-y-animate-down" style="background-color: white;padding-top: 100px;">
+            <h1>Our Clients</h1>
+    
             <div class="underline">
                 <hr class="first" />
                 <hr class="second" />
                 <hr class="third" />
             </div>
         </div>
-
-        <div class="product-higlight">
-            <div class="product-slider animation-translate-x-animate-right">
-                <img id="productSlider" src="static/photos/Products/2.jpg">
+        <div class="client-logo-container">
+            <i class="fa-solid fa-angles-left" onclick="slideClientLogo(-1)"></i>
+            <div id="render-client-logos" class="render-client-logos">
+                <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 1 </div>
+                <div class="client-logo sub-active-client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 2 </div>
+                <div class="client-logo active-client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 3 </div>
+                <div class="client-logo sub-active-client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 4 </div>
+                <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 5 </div>
             </div>
-            <div class="product-List animation-translate-x-animate-left">
-                <ul>
-                    <p class="product-item">Sodium Silicate Liquid</p>
-                    <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
-                    <p class="product-item">Sodium Metasilicate Nonahydrate</p>
-                    <p class="product-item">Sodium Metasilicate Pentahydrate</p>
-                    <p class="product-item">Sodium Silicate Powder</p>
-                </ul>
+            <i class="fa-solid fa-angles-right" onclick="slideClientLogo(1)"></i>
+        </div>
+        <div id="client-logo-list" style="display: none;">
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 6 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 7 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 8 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 9 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 10 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 11 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 12 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 13 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 14 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 15 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 16 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 17 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 18 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 19 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 20 </div>
+        </div>
+    
+        <div class="section-title animation-translate-y-animate-down" style="background-color: white;">
+            <h1>Branding partners</h1>
+    
+            <div class="underline">
+                <hr class="first" />
+                <hr class="second" />
+                <hr class="third" />
             </div>
+        </div>
+        <div class="card-container">
+            <div class="card mission branding-card animation-translate-x-animate-right"><h1>OUR MISSION</h1></div>
+            <div class="card vision branding-card animation-translate-y-animate-down"> <h1>OUR VISION</h1></div>
         </div>
     </div>
 
-    <div class="client-logo-container">
-        <i class="fa-solid fa-angles-left" onclick="slideClientLogo(-1)"></i>
-        <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 1 </div>
-        <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 2 </div>
-        <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 3 </div>
-        <div class="client-logo displayNone"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 4 </div>
-        <div class="client-logo displayNone"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 5 </div>
-        <i class="fa-solid fa-angles-right"></i>
-    </div>
-
-    <div>
-        our partners
-    </div>
+    
 
     <footer class="footer">
-        <div class="section-title animation-translate-y-animate-up">
+        <div class="animation-translate-y-animate-up">
             <h4>KEEP IN TOUNCH</h4>
 
             <div class="underline">
@@ -197,7 +244,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-title animation-translate-y-animate-up">
+        <div class="animation-translate-y-animate-up">
             <h4>QUICK LINKS</h4>
 
             <div>
@@ -247,7 +294,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-title animation-translate-y-animate-up">
+        <div class="animation-translate-y-animate-up">
             <h4>OUR PRODUCTS</h4>
 
             <div class="underline">
