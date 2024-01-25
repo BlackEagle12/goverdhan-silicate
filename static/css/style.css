@@ -18,7 +18,7 @@ nav {
 }
 
 .nav-scroll{
-    background-color: white;
+    background-color: rgba(220,220,220,1);
     box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
     z-index: 2;
     position: fixed;
@@ -41,7 +41,7 @@ nav {
     margin: 0 20px;
 }
 
-.menu-container {
+.menu-container{
     justify-content: flex-end;
     align-items: center;
     width: 100%;
@@ -59,7 +59,7 @@ nav {
 }
 
 .menu:hover a{
-    color: blue;
+    color: black;
 }
 
 a {
@@ -68,29 +68,50 @@ a {
 }
 
 .submenu{
+    display: none;
     position: absolute;
+    top: 100px; 
+    color: chocolate;
+    background-color: white; 
+    padding: 0;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
+    /*left: 0; */
+	/* padding-top: 500px; */
+	/* padding-bottom: .5em;	 */
+    z-index: 1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* position: absolute;
     top : 100px;
     right: 0;
-    z-index: 1;
     height: 80px;
     padding: 0px;
-    display: none;
+    display: none; */
 }
 
 .submenu a{
     padding: 0 30px;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.126);
+    border-radius: 50px;
+
 }
 
+
 .extendable:hover .submenu {
-    display: flex;
+    display: inline-table;
+    /* color: blue; */
+}
+
+.extendable:hover i {
+    transform: rotate(180deg);
 }
 
 .submenu a:hover{
-    background-color: #cde7d5;
+    background-color: rgba(0, 0, 0, 0.136);
 }
 
 .slider {

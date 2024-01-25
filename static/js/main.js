@@ -25,9 +25,9 @@ changeProductSliderImage = () => {
 }
 
 window.onload = (event) => {
-    setInterval(changeSliderImage,1000);
-    setInterval(changeProductSliderImage, 2000);
-    setInterval(slideClientLogo,2000,1);
+    setInterval(changeSliderImage,5000);
+    setInterval(changeProductSliderImage, 5000);
+    setInterval(slideClientLogo,5000,1);
     addIntersectionObserver('.animation-translate-y-animate-up', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
