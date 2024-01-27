@@ -263,12 +263,13 @@ a {
 .product-higlight {
     display: flex;
     margin-top: 20px;
-    width: 80vw;
+    width: 95vw;
     height: 400px;
+    justify-content: space-between;
 }
 
 .product-slider {
-    width: 50%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +283,7 @@ a {
 }
 
 .product-List {
-    width: 50%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
