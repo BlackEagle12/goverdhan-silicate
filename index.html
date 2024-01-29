@@ -14,19 +14,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="static/js/main.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="d-felx">
-            <div class="nav-logo-parent d-felx">
-                <img class="nav-logo" src="static/photos/logos/logo.svg">
-            </div>
-            <div class="menu-container d-felx">
+            <div class="menu-container d-felx" style="justify-content: flex-start;">
                 <div class="menu">
                     <a href="index.html">Home</a>
                 </div>
+                <div class="menu extendable">
+                    <a href="">Products</a>&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="submenu">
+                        <a href="product.html?product=Sodium Silicate Liquid">Sodium Silicate Liquid</a>
+                        <a href="product.html?product=Sodium Silicate Glass (Lump/Cullet)">Sodium Silicate Glass
+                            (Lump/Cullet)</a>
+                        <a href="product.html?product=Sodium Metasilicate Nonahydrate">Sodium Metasilicate
+                            Nonahydrate</a>
+                        <a href="product.html?product=Sodium Metasilicate Pentahydrate">Sodium Metasilicate
+                            Pentahydrate</a>
+                        <a href="product.html?product=Sodium Silicate Powder">Sodium Silicate Powder</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="about.html">About US</a>
+                </div>
+            </div>
+            <div class="nav-logo-parent d-felx">
+                <div class="nav-logo-goverdhan"> GOVERDHAN </div>
+                <img class="nav-logo" src="static/photos/logos/logo.svg">
+                <div class="nav-logo-Silicate"> SILICATE </div>
+            </div>
+            <div class="menu-container d-felx">
                 <div class="menu">
                     <a href="Industriesweserve.html">Industries We Serve</a>
                 </div>
@@ -34,77 +53,106 @@
                     <a href="blog.html">Blog</a>
                 </div>
                 <div class="menu">
-                    <a href="about.html">About US</a>
-                </div>
-                <div class="menu">
                     <a href="contact.html">Contact US</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div id="slider" class="slider">
-        <div id="circelimg1" class="circel bgBlack"></div>
-        <div id="circelimg2" class="circel"></div>
-        <div id="circelimg3" class="circel"></div>
-    </div>
-
-
-    <div class="welcome-section">
-        <div class="welcome-menu">
-
-            <div id="menuItem1" class="menu-item active-menu" onclick="changeMenuItem(1)">
-                Introduction
-            </div>
-            <div id="menuItem2" class="menu-item" onclick="changeMenuItem(2)">
-                Quality
-            </div>
+    <div id="slider" class="slider animation-translate-y-animate-down">
+        <div class="wlcm-msg">
+            <p class="main">Welcome to goverdhan silicate</p>
+            <p class="sub">manufacturer of Sodium silicate glass(Lamp/Cullet)</p>
         </div>
-        <div id="menuItemSection1" class="section">
-            <div class="section-title">
-                <h1>Introduction</h1>
-
-                <div class="underline">
-                    <hr class="first" />
-                    <hr class="second" />
-                    <hr class="third" />
-                </div>
-            </div>
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
-                laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
-                minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
-                iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
-                est. Dicta inventore quisquam quasi nisi, obcaecati officiis aperiam vero praesentium neque ipsum
-                possimus voluptatum ab earum in fugiat facilis. Tenetur debitis expedita accusamus pariatur quibusdam,
-                molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
-                quo ex exercitationem maxime corrupti hic ea.</p>
-        </div>
-        <div id="menuItemSection2" class="section diplayNone">
-            <div class="section-title">
-                <h1>Quality</h1>
-
-                <div class="underline">
-                    <hr class="first" />
-                    <hr class="second" />
-                    <hr class="third" />
-                </div>
-            </div>
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo placeat velit sunt veniam ullam sapiente
-                laudantium consequatur, repellat culpa commodi? Praesentium, corporis! Saepe ducimus, hic molestiae vero
-                minima nam asperiores nihil maxime exercitationem quibusdam consequatur cum! Nam error sit repudiandae
-                iusto dolores asperiores voluptate vero numquam quas repellat, animi totam placeat laborum dolor commodi
-                est. Dicta inventore quisquam quasi nisi, obcaecati officiis aperiam vero praesentium neque ipsum
-                possimus voluptatum ab earum in fugiat facilis. Tenetur debitis expedita accusamus pariatur quibusdam,
-                molestiae autem harum quos facere magnam cupiditate repellendus. Quas sequi itaque distinctio numquam
-                quo ex exercitationem maxime corrupti hic ea.</p>
+        <div style="overflow: hidden;">
+            <div id="circelimg1" class="circel bgBlack"></div>
+            <div id="circelimg2" class="circel"></div>
+            <div id="circelimg3" class="circel"></div>
         </div>
     </div>
 
     <!-- product section -->
-    <div id="menuItemSection1" class="section">
-        <div class="section-title">
-            <h1>Products</h1>
+    <div
+        style="background-image: url('https://source.unsplash.com/user/c_v_r/1900x800'); background-repeat: no-repeat; background-attachment: fixed;">
+        <div class="welcome-section">
+            <div class="welcome-menu animation-translate-x-animate-right">
+
+                <div id="menuItem1" class="menu-item active-menu" onclick="changeMenuItem(1)">
+                    Introduction
+                </div>
+                <div id="menuItem2" class="menu-item" onclick="changeMenuItem(2)">
+                    Quality
+                </div>
+            </div>
+            <div id="menuItemSection1" class="section">
+                <div class="section-title animation-translate-y-animate-up" style="background-color: white;">
+                    <h1>Introduction</h1>
+
+                    <div class="underline">
+                        <hr class="first" />
+                        <hr class="second" />
+                        <hr class="third" />
+                    </div>
+                </div>
+
+                <p class="animation-translate-x-animate-left">
+                    Greetings global entrepreneurs! Step into the dynamic realm of sodium silicate at our online hub.
+                    Dive into a wealth of information, market insights, and business opportunities surrounding this
+                    versatile compound. Uncover the potential for innovation and collaboration as we navigate the world
+                    of sodium silicate together. From industrial applications to international trade, our platform is
+                    your gateway to a thriving business landscape. Join us in shaping the future of sodium silicate on a
+                    global scale.</p>
+            </div>
+            <div id="menuItemSection2" class="section displayNone">
+                <div class="section-title">
+                    <h1>Quality</h1>
+
+                    <div class="underline">
+                        <hr class="first" />
+                        <hr class="second" />
+                        <hr class="third" />
+                    </div>
+                </div>
+
+                <p class="animation-translate-x-animate-left">
+                    Indulge in the unparalleled quality of our sodium silicate offerings. Meticulously sourced and
+                    manufactured, our sodium silicate products exemplify purity, consistency, and reliability. Crafted
+                    to meet the exacting standards of diverse industries, our formulations boast exceptional chemical
+                    integrity and performance. Whether you're delving into detergent manufacturing, construction, or
+                    specialty applications, our sodium silicate stands as the cornerstone of excellence. Elevate your
+                    business processes with a product that epitomizes quality at every molecular level. Trust in the
+                    precision of our sodium silicate – where excellence meets innovation.</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title animation-translate-y-animate-down">
+                <h1>Products</h1>
+
+                <div class="underline">
+                    <hr class="first" />
+                    <hr class="second" />
+                    <hr class="third" />
+                </div>
+            </div>
+
+            <div class="product-higlight">
+                <div class="product-slider animation-translate-x-animate-right">
+                    <img id="productSlider" src="static/photos/Products/2.jpg">
+                </div>
+                <div class="product-List animation-translate-x-animate-left">
+                    <ul>
+                        <p class="product-item">Sodium Silicate Liquid</p>
+                        <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
+                        <p class="product-item">Sodium Metasilicate Nonahydrate</p>
+                        <p class="product-item">Sodium Metasilicate Pentahydrate</p>
+                        <p class="product-item">Sodium Silicate Powder</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-title animation-translate-y-animate-down"
+            style="background-color: white;padding-top: 100px;">
+            <h1>Our Clients</h1>
 
             <div class="underline">
                 <hr class="first" />
@@ -112,29 +160,65 @@
                 <hr class="third" />
             </div>
         </div>
-
-        <div class="product-higlight">
-            <div class="product-slider">
-                <img id="productSlider" src="static/photos/Products/2.jpg">
+        <div class="client-logo-container">
+            <i class="fa-solid fa-angles-left" onclick="slideClientLogo(-1)"></i>
+            <div id="render-client-logos" class="render-client-logos">
+                <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 1 </div>
+                <div class="client-logo sub-active-client-logo"> <img class="nav-logo"
+                        src="static/photos/logos/logo.svg"> 2 </div>
+                <div class="client-logo active-client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 3
+                </div>
+                <div class="client-logo sub-active-client-logo"> <img class="nav-logo"
+                        src="static/photos/logos/logo.svg"> 4 </div>
+                <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 5 </div>
             </div>
-            <div class="product-List">
-                <ul>
-                    <p class="product-item">Sodium Silicate Liquid</p>
-                    <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
-                    <p class="product-item">Sodium Metasilicate Nonahydrate</p>
-                    <p class="product-item">Sodium Metasilicate Pentahydrate</p>
-                    <p class="product-item">Sodium Silicate Powder</p>
-                </ul>
-            </div>
+            <i class="fa-solid fa-angles-right" onclick="slideClientLogo(1)"></i>
+        </div>
+        <div id="client-logo-list" style="display: none;">
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 6 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 7 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 8 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 9 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 10 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 11 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 12 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 13 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 14 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 15 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 16 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 17 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 18 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 19 </div>
+            <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 20 </div>
         </div>
 
-    </div>
-    <footer class="footer">
-        <div class="section-title">
-            <h4>KEEP IN TOUNCH</h4>
+        <div class="section-title animation-translate-y-animate-down" style="background-color: white;">
+            <h1>Branding partners</h1>
 
             <div class="underline">
                 <hr class="first" />
+                <hr class="second" />
+                <hr class="third" />
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card mission branding-card animation-translate-x-animate-right">
+                <h1>OUR MISSION</h1>
+            </div>
+            <div class="card vision branding-card animation-translate-y-animate-down">
+                <h1>OUR VISION</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="animation-translate-y-animate-up">
+            <h4>KEEP IN TOUNCH</h4>
+
+            <div class="underline">
+                <hr class="second" />
             </div>
 
             <div class="contact-section">
@@ -166,12 +250,12 @@
                 </div>
             </div>
         </div>
-        <div class="section-title">
+        <div class="animation-translate-y-animate-up">
             <h4>QUICK LINKS</h4>
 
             <div>
                 <div class="underline">
-                    <hr class="first" />
+                    <hr class="second" />
                 </div>
 
                 <div class="quick-link">
@@ -216,31 +300,48 @@
                 </div>
             </div>
         </div>
-        <div class="product">
+        <div class="animation-translate-y-animate-up">
             <h4>OUR PRODUCTS</h4>
 
             <div class="underline">
-                <hr class="first" />
+                <hr class="second" />
             </div>
 
-            <div class="description">
-                <p>Sodium Silicate Liquid</p>
-            </div>
-            <div class="description">
-                <p>Sodium Silicate Glass (Lump/Cullet)</p>
-            </div>
-            <div class="description">
-                <p>Sodium Metasilicate Nonahydrate</p>
-            </div>
-            <div class="description">
-                <p>Sodium Metasilicate Pentahydrate</p>
-            </div>
-            <div class="description">
-                <p>Sodium Silicate Powder</p>
+            <div class="product ">
+
+                <ul>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Silicate Liquid</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Silicate Glass (Lump/Cullet)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Metasilicate Nonahydrate</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Metasilicate Pentahydrate</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Silicate Powder</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
 
+    <script src="static/js/main.js"></script>
+    <script src="static/js/common.js"></script>
 </body>
 
 </html>

@@ -14,19 +14,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="static/js/main.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
         <div class="d-felx">
-            <div class="nav-logo-parent d-felx">
-                <img class="nav-logo" src="static/photos/logos/logo.svg">
-            </div>
-            <div class="menu-container d-felx">
+            <div class="menu-container d-felx" style="justify-content: flex-start;">
                 <div class="menu">
                     <a href="index.html">Home</a>
                 </div>
+                <div class="menu extendable">
+                    <a href="">Products</a>&nbsp;<i class="fa fa-caret-down"></i>
+                    <div class="submenu">
+                        <a href="product.html?product=Sodium Silicate Liquid">Sodium Silicate Liquid</a>
+                        <a href="product.html?product=Sodium Silicate Glass (Lump/Cullet)">Sodium Silicate Glass (Lump/Cullet)</a>
+                        <a href="product.html?product=Sodium Metasilicate Nonahydrate">Sodium Metasilicate Nonahydrate</a>
+                        <a href="product.html?product=Sodium Metasilicate Pentahydrate">Sodium Metasilicate Pentahydrate</a>
+                        <a href="product.html?product=Sodium Silicate Powder">Sodium Silicate Powder</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="about.html">About US</a>
+                </div>
+            </div>
+            <div class="nav-logo-parent d-felx">
+                <div class="nav-logo-goverdhan"> GOVERDHAN </div>
+                <img class="nav-logo" src="static/photos/logos/logo.svg">
+                <div class="nav-logo-Silicate"> SILICATE </div>
+            </div>
+            <div class="menu-container d-felx">
                 <div class="menu">
                     <a href="Industriesweserve.html">Industries We Serve</a>
                 </div>
@@ -34,27 +50,83 @@
                     <a href="blog.html">Blog</a>
                 </div>
                 <div class="menu">
-                    <a href="about.html">About US</a>
-                </div>
-                <div class="menu">
                     <a href="contact.html">Contact US</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="contact">
-        <div class="section-title">
-            <h1 class="conh1">GET IN TOUCH WITH US</h1>
+    <div class="contact-us">
+        <div class="section-title animation-translate-y-animate-down">
+            <h2>GET IN TOUCH WITH US</h2>
 
             <div class="underline">
                 <hr class="first" />
                 <hr class="second" />
                 <hr class="third" />
             </div>
-            <p class="conh1">If you feel like I’m the man for the job, let’s drop a line to me!</p>
-
+            <p class="conh1 animation-translate-x-animate-left">If you feel like I’m the man for the job, let’s drop a line to me!</p>
         </div>
-        <div class="contact-section">
+
+        <div class="contact-info">
+            <div class="contact-details animation-translate-x-animate-right">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <p>Domestic : +91 98252 18329</p>
+                <p>Export : +91 97127 96836</p>
+            </div>
+
+            <div class="contact-details animation-translate-y-animate-down">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <p class="conh1">export@ankitsilicate.com
+                    sales@ankitsilicate.com</p>
+            </div>
+
+            <div class="contact-details animation-translate-x-animate-left">
+                <div class="icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <p class="conh1">Ankit Silicate
+                    Opp.CNG Pump,Jetpar Road ,
+                    At.Bela.Morbi-363642,Gujarat - INDIA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-form-container">
+            <div class="msg">
+                SEND MESSAGE
+            </div>
+            <div class="contact-form">
+                <form>
+    
+                    <div class="basic-info">
+                        <input type="text" class="animation-translate-x-animate-right" placeholder="Name" required>
+                        <input type="tel" class="animation-translate-x-animate-right" placeholder="Phone">
+                    </div>
+                    <div class="input-email animation-translate-x-animate-right">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="animation-translate-x-animate-right">
+                        <textarea placeholder="Message" required></textarea>
+                    </div>
+                    <div class="captcha">
+                        <div class="g-recaptcha animation-translate-x-animate-right" data-sitekey="6LfhFDspAAAAAElmAzZY7e8akzWXDPJkP0HXH6fH"></div>
+                    </div>
+                    <input type="submit" class="animation-translate-x-animate-right" value="Send Message">
+                </form>
+            </div>
+        </div>
+        
+        <div class="google-map animation-translate-x-animate-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14709.726326976617!2d70.84767059999999!3d22.8235169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ5JzE1LjQiTiA3MMKwNTEnMTYuOSJF!5e0!3m2!1sen!2sin!4v1703411025323!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+    <!-- <div class="contact-section">
             <div class="contact-details">
                 <div class="icon-con">
                     <i class="fa-solid fa-phone"></i>
@@ -80,73 +152,18 @@
                     At.Bela.Morbi-363642,Gujarat - INDIA</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
 
-    <div class="contact-form">
-        <div class="msg">
-            SEND MESSAGE
-        </div>
-        <form method="post" action="#">
-            <input type="hidden" name="type" value="contact">
-            <div class="row">
-                <div class="col-lg-6">
-                    <span class="wpcf7-form-control-wrap your-name">
-                        <input type="text" name="name" id="name" value=""
-                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true"
-                            aria-invalid="false" placeholder="Name" required="required">
-                    </span>
-                </div>
-                <div class="col-lg-6">
-                    <span class="wpcf7-form-control-wrap your-email">
-                        <input type="text" name="email" id="mail" value=""
-                            class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                            aria-required="true" aria-invalid="false" placeholder="Email" required="required">
-                    </span>
-                </div>
-                <div class="col-lg-12">
-                    <span class="wpcf7-form-control-wrap number-707">
-                        <input type="text" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text"
-                            aria-invalid="false" placeholder="Phone" required="required">
-                    </span>
-                </div>
-                <div class="col-md-12">
-                    <span class="wpcf7-form-control-wrap textarea-950">
-                        <textarea name="message" id="message" cols="40" rows="2"
-                            class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
-                            placeholder="Message"></textarea>
-                    </span>
-                </div>
-                <div class="col-lg-12">
-                    <span class="wpcf7-form-control-wrap number-707">
-                        <div class="g-recaptcha" data-sitekey="6Lck_VcUAAAAAGAzqFjzZhfOonP00Tcpx5U1-N_6">
-                            <div style="width: 304px; height: 78px;">
-                                <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
-                                        name="a-odsb7yvulo8w" frameborder="0" scrolling="no"
-                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                                        src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Lck_VcUAAAAAGAzqFjzZhfOonP00Tcpx5U1-N_6&amp;co=aHR0cHM6Ly9hbmtpdHNpbGljYXRlLmNvbTo0NDM.&amp;hl=en&amp;v=cwQvQhsy4_nYdnSDY4u7O5_B&amp;size=normal&amp;cb=7wgwpzl32m9z"></iframe>
-                                </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
-                                    class="g-recaptcha-response"
-                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                            </div><iframe style="display: none;"></iframe>
-                        </div> <br>
-                    </span>
-                </div>
-                <div class="col-md-12">
-                    <input type="submit" name="submit" class="main-button" value="Send Message">
-
-                </div>
-            </div>
-    </div>
-    </form>
+    <!--  -->
     <footer class="footer">
-        <div class="section-title">
+        <div class="animation-translate-y-animate-up">
             <h4>KEEP IN TOUNCH</h4>
 
             <div class="underline">
-                <hr class="first" />
+                <hr class="second" />
             </div>
 
             <div class="contact-section">
@@ -178,12 +195,12 @@
                 </div>
             </div>
         </div>
-        <div class="section-title">
+        <div class="animation-translate-y-animate-up">
             <h4>QUICK LINKS</h4>
 
             <div>
                 <div class="underline">
-                    <hr class="first" />
+                    <hr class="second" />
                 </div>
 
                 <div class="quick-link">
@@ -228,31 +245,49 @@
                 </div>
             </div>
         </div>
-        <div class="product">
+        <div class="animation-translate-y-animate-up">
             <h4>OUR PRODUCTS</h4>
 
             <div class="underline">
-                <hr class="first" />
+                <hr class="second" />
             </div>
 
-            <div class="description">
-                <p>Sodium Silicate Liquid</p>
-            </div>
-            <div class="description">
-                <p>Sodium Silicate Glass (Lump/Cullet)</p>
-            </div>
-            <div class="description">
-                <p>Sodium Metasilicate Nonahydrate</p>
-            </div>
-            <div class="description">
-                <p>Sodium Metasilicate Pentahydrate</p>
-            </div>
-            <div class="description">
-                <p>Sodium Silicate Powder</p>
+            <div class="product">
+
+                <ul>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Silicate Liquid</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Silicate Glass (Lump/Cullet)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Metasilicate Nonahydrate</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Metasilicate Pentahydrate</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <p>Sodium Silicate Powder</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/common.js"></script>
 </body>
 
 </html>
