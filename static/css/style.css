@@ -805,7 +805,7 @@ input[type=number] {
 }
 
 .blog-heading {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .blog-content {
@@ -822,7 +822,20 @@ input[type=number] {
 
 .blog-content-text {
     margin-bottom: 50px;
+
 }
+
+.blog-content-text-last {
+    color: chocolate;
+}
+
+.blog-content-text-last::first-letter {
+    font-size: 40px;
+    float: left;
+    padding-right: 7px;
+    padding-bottom: 5px;
+}
+
 
 .blog-content-text::first-letter {
     font-size: 40px;
