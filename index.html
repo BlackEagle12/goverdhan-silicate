@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav id="nav">
+    <!-- <nav id="nav">
         <div class="d-felx">
             <div class="menu-container d-felx" style="justify-content: flex-start;">
                 <div class="menu">
@@ -57,7 +57,7 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <div id="slider" class="slider animation-translate-y-animate-down">
         <div class="wlcm-msg">
             <p class="main">Welcome to goverdhan silicate</p>
@@ -83,7 +83,7 @@
                     Quality
                 </div>
             </div>
-            <div id="menuItemSection1" class="section">
+            <div id="menuItemSection1" class="section" style="max-width: 80%;">
                 <div class="section-title animation-translate-y-animate-up" style="background-color: white;">
                     <h1>Introduction</h1>
 
@@ -102,7 +102,7 @@
                     your gateway to a thriving business landscape. Join us in shaping the future of sodium silicate on a
                     global scale.</p>
             </div>
-            <div id="menuItemSection2" class="section displayNone">
+            <div id="menuItemSection2" class="section displayNone" style="max-width: 80%;">
                 <div class="section-title">
                     <h1>Quality</h1>
 
@@ -123,32 +123,35 @@
                     precision of our sodium silicate – where excellence meets innovation.</p>
             </div>
         </div>
-        <div class="section">
-            <div class="section-title animation-translate-y-animate-down">
-                <h1>Products</h1>
-
-                <div class="underline">
-                    <hr class="first" />
-                    <hr class="second" />
-                    <hr class="third" />
+        <div class="home-page-product-section">
+            <div class="section">
+                <div class="section-title animation-translate-y-animate-down">
+                    <h1>Products</h1>
+    
+                    <div class="underline">
+                        <hr class="first" />
+                        <hr class="second" />
+                        <hr class="third" />
+                    </div>
                 </div>
-            </div>
-
-            <div class="product-higlight">
-                <div class="product-slider animation-translate-x-animate-right">
-                    <img id="productSlider" src="static/photos/Products/2.jpg">
-                </div>
-                <div class="product-List animation-translate-x-animate-left">
-                    <ul>
-                        <p class="product-item">Sodium Silicate Liquid</p>
-                        <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
-                        <p class="product-item">Sodium Metasilicate Nonahydrate</p>
-                        <p class="product-item">Sodium Metasilicate Pentahydrate</p>
-                        <p class="product-item">Sodium Silicate Powder</p>
-                    </ul>
+    
+                <div class="product-higlight">
+                    <div class="product-slider animation-translate-x-animate-right">
+                        <img id="productSlider" src="static/photos/Products/2.jpg">
+                    </div>
+                    <div class="product-List animation-translate-x-animate-left">
+                        <ul>
+                            <p class="product-item">Sodium Silicate Liquid</p>
+                            <p class="product-item">Sodium Silicate Glass (Lump/Cullet)</p>
+                            <p class="product-item">Sodium Metasilicate Nonahydrate</p>
+                            <p class="product-item">Sodium Metasilicate Pentahydrate</p>
+                            <p class="product-item">Sodium Silicate Powder</p>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        
 
         <div class="section-title animation-translate-y-animate-down"
             style="background-color: white;padding-top: 100px;">
@@ -163,14 +166,21 @@
         <div class="client-logo-container">
             <i class="fa-solid fa-angles-left" onclick="slideClientLogo(-1)"></i>
             <div id="render-client-logos" class="render-client-logos">
-                <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 1 </div>
-                <div class="client-logo sub-active-client-logo"> <img class="nav-logo"
-                        src="static/photos/logos/logo.svg"> 2 </div>
-                <div class="client-logo active-client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 3
+                <div class="client-logo"> 
+                    <img class="nav-logo" src="static/photos/logos/logo.svg"> 1 
                 </div>
-                <div class="client-logo sub-active-client-logo"> <img class="nav-logo"
-                        src="static/photos/logos/logo.svg"> 4 </div>
-                <div class="client-logo"> <img class="nav-logo" src="static/photos/logos/logo.svg"> 5 </div>
+                <div class="client-logo sub-active-client-logo"> 
+                    <img class="nav-logo" src="static/photos/logos/logo.svg"> 2 
+                </div>
+                <div class="client-logo active-client-logo"> 
+                    <img class="nav-logo" src="static/photos/logos/logo.svg"> 3
+                </div>
+                <div class="client-logo sub-active-client-logo">
+                     <img class="nav-logo" src="static/photos/logos/logo.svg"> 4 
+                </div>
+                <div class="client-logo"> 
+                    <img class="nav-logo" src="static/photos/logos/logo.svg"> 5 
+                </div>
             </div>
             <i class="fa-solid fa-angles-right" onclick="slideClientLogo(1)"></i>
         </div>
@@ -213,7 +223,7 @@
 
 
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="animation-translate-y-animate-up">
             <h4>KEEP IN TOUNCH</h4>
 
@@ -338,7 +348,7 @@
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <script src="static/js/main.js"></script>
     <script src="static/js/common.js"></script>

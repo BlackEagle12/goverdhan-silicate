@@ -25,9 +25,10 @@ changeProductSliderImage = () => {
 }
 
 window.onload = (event) => {
+	initialSetup();
     setInterval(changeSliderImage,5000);
     setInterval(changeProductSliderImage, 5000);
-    setInterval(slideClientLogo,5000,1);
+    setInterval(slideClientLogo,10000,1);
     addIntersectionObserver('.animation-translate-y-animate-up', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
@@ -79,28 +80,45 @@ slideClientLogo = num => {
     const current = document.getElementById("render-client-logos");
     const clientLogoList = document.getElementById("client-logo-list");
 
-    current.children[parseInt(current.children.length/2)].classList.remove("active-client-logo");
-    current.children[parseInt(current.children.length/2) - 1].classList.remove("sub-active-client-logo");
-    current.children[parseInt(current.children.length/2) + 1].classList.remove("sub-active-client-logo");
-    if(num > 0){
-        const element = current.children[0];
-        const nextElement = clientLogoList.children[0];
-        current.appendChild(nextElement)
-        clientLogoList.appendChild(element)
-    }
-    else
-    {
-        const element = current.children[current.children.length - 1];
-        const nextElement = clientLogoList.children[clientLogoList.children.length - 1];
-        current.insertBefore(nextElement, current.children[0])
-        clientLogoList.insertBefore(element, clientLogoList.children[0])
-    }
-    
-    current.children[parseInt(current.children.length/2)].classList.add("active-client-logo");
-    current.children[parseInt(current.children.length/2) - 1].classList.add("sub-active-client-logo");
-    current.children[parseInt(current.children.length/2) + 1].classList.add("sub-active-client-logo");
-
-    console.log('done');
+	if (window.screen.width < 800) {
+		if(num > 0){
+			const element = current.children[0];
+			const nextElement = clientLogoList.children[0];
+			current.appendChild(nextElement)
+			clientLogoList.appendChild(element)
+		}
+		else
+		{
+			const element = current.children[current.children.length - 1];
+			const nextElement = clientLogoList.children[clientLogoList.children.length - 1];
+			current.insertBefore(nextElement, current.children[0])
+			clientLogoList.insertBefore(element, clientLogoList.children[0])
+		}
+		current.children[0].classList.add("sub-active-client-logo")
+	}
+	else{
+		current.children[parseInt(current.children.length/2)].classList.remove("active-client-logo");
+		current.children[parseInt(current.children.length/2) - 1].classList.remove("sub-active-client-logo");
+		current.children[parseInt(current.children.length/2) + 1].classList.remove("sub-active-client-logo");
+	
+		if(num > 0){
+			const element = current.children[0];
+			const nextElement = clientLogoList.children[0];
+			current.appendChild(nextElement)
+			clientLogoList.appendChild(element)
+		}
+		else
+		{
+			const element = current.children[current.children.length - 1];
+			const nextElement = clientLogoList.children[clientLogoList.children.length - 1];
+			current.insertBefore(nextElement, current.children[0])
+			clientLogoList.insertBefore(element, clientLogoList.children[0])
+		}
+		
+		current.children[parseInt(current.children.length/2)].classList.add("active-client-logo");
+		current.children[parseInt(current.children.length/2) - 1].classList.add("sub-active-client-logo");
+		current.children[parseInt(current.children.length/2) + 1].classList.add("sub-active-client-logo");
+	}
 }
 
 window.addEventListener('scroll', () => {
@@ -113,3 +131,20 @@ window.addEventListener('scroll', () => {
         document.getElementById('nav').classList.remove('nav-scroll');
     }
   });
+
+initialSetup = () => {
+	if (window.screen.width < 800) {
+		const current = document.getElementById("render-client-logos");
+		const clientLogoList = document.getElementById("client-logo-list");
+		console.log(clientLogoList.children);
+		while(current.children.length > 1){
+			const element = current.children[current.children.length - 1];
+			element.classList.remove("sub-active-client-logo")
+			element.classList.remove("active-client-logo")
+			clientLogoList.insertBefore(element, clientLogoList.children[0])
+		}
+		current.children[0].classList.add("sub-active-client-logo")
+	}
+	
+	console.log(window.screen.width);
+}
