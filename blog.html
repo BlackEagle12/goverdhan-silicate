@@ -18,7 +18,7 @@
 
 <body>
     <nav id="nav">
-        <div class="d-felx">
+        <div class="d-felx" style="height: 100%;">
             <div class="menu-container d-felx" style="justify-content: flex-start;">
                 <div class="menu">
                     <a href="index.html">Home</a>
@@ -56,12 +56,31 @@
                     <a href="contact.html">Contact US</a>
                 </div>
             </div>
+            <div class="responsive-menu-toggle" onclick="toggleResponsiveNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="responsive-nav displayNone" id="responsive-nav">
+            <a href="index.html"><div class="responsive-nav-item">Home</div></a>
+            <a> <div class="responsive-nav-item" onclick="toggleResponsiveSubMenu()" style="cursor: pointer;">Products &nbsp;<i class="fa fa-caret-down"></i></div></a>
+            <div class="displayNone" id="responsiveNavSubItem">
+                <a href="product.html?product=Sodium Silicate Liquid"> <div class="responsive-nav-item">Sodium Silicate Liquid</div></a>
+                <a href="product.html?product=Sodium Silicate Glass (Lump/Cullet)"> <div class="responsive-nav-item">Sodium Silicate Glass (Lump/Cullet)</div></a>
+                <a href="product.html?product=Sodium Metasilicate Nonahydrate"> <div class="responsive-nav-item">Sodium Metasilicate Nonahydrate</div></a>
+                <a href="product.html?product=Sodium Metasilicate Pentahydrate"> <div class="responsive-nav-item">Sodium Metasilicate Pentahydrate</div></a>
+                <a href="product.html?product=Sodium Silicate Powder"> <div class="responsive-nav-item">Sodium Silicate Powder</div></a>
+            </div>
+            <a href="about.html"> <div class="responsive-nav-item">About US </div> </a>
+            <a href="Industriesweserve.html"> <div class="responsive-nav-item">Industries We Serve </div> </a>
+            <a href="blog.html"> <div class="responsive-nav-item">Blog </div> </a>
+            <a href="contact.html"> <div class="responsive-nav-item">Contact US </div> </a>
         </div>
     </nav>
 
     <div class="blog">
         <div class="blog-container">
-            <div class="blog-header-image">
+            <div class="blog-container-image-section">
+                <div class="blog-header-image"></div>
                 <div class="blog-header-image-textarea">
                     our thoughts
                     <p class="blog-heading">Future with Silicate</p>
@@ -131,10 +150,12 @@
 
     <footer class="footer">
         <div class="animation-translate-y-animate-up">
-            <h4>KEEP IN TOUNCH</h4>
+            <div class="footer-heading">
+                <h4>KEEP IN TOUNCH</h4>
 
-            <div class="underline">
-                <hr class="second" />
+                <div class="underline">
+                    <hr class="second" />
+                </div>
             </div>
 
             <div class="contact-section">
@@ -167,12 +188,14 @@
             </div>
         </div>
         <div class="animation-translate-y-animate-up">
-            <h4>QUICK LINKS</h4>
-
-            <div>
+            <div class="footer-heading">
+                <h4>QUICK LINKS</h4>
                 <div class="underline">
                     <hr class="second" />
                 </div>
+            </div>
+
+            <div>
 
                 <div class="quick-link">
                     <div class="icon">
@@ -217,13 +240,15 @@
             </div>
         </div>
         <div class="animation-translate-y-animate-up">
-            <h4>OUR PRODUCTS</h4>
-
-            <div class="underline">
-                <hr class="second" />
+            <div class="footer-heading">
+                <h4>OUR PRODUCTS</h4>
+    
+                <div class="underline">
+                    <hr class="second" />
+                </div>
             </div>
 
-            <div class="product">
+            <div class="product ">
 
                 <ul>
                     <li>
