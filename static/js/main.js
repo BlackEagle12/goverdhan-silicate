@@ -136,15 +136,24 @@ initialSetup = () => {
 	if (window.screen.width < 800) {
 		const current = document.getElementById("render-client-logos");
 		const clientLogoList = document.getElementById("client-logo-list");
-		console.log(clientLogoList.children);
-		while(current.children.length > 1){
-			const element = current.children[current.children.length - 1];
-			element.classList.remove("sub-active-client-logo")
-			element.classList.remove("active-client-logo")
-			clientLogoList.insertBefore(element, clientLogoList.children[0])
+		while(current?.children?.length > 1){
+			const element = current?.children[current?.children?.length - 1];
+			element?.classList.remove("sub-active-client-logo")
+			element?.classList.remove("active-client-logo")
+			clientLogoList?.insertBefore(element, clientLogoList.children[0])
 		}
-		current.children[0].classList.add("sub-active-client-logo")
+		current?.children[0]?.classList?.add("sub-active-client-logo")
 	}
 	
 	console.log(window.screen.width);
+}
+
+const toggleResponsiveSubMenu = (element) => {
+    const subItems = document.getElementById("responsiveNavSubItem")
+    subItems.classList.toggle("displayNone")
+}
+
+const toggleResponsiveNav = () => {
+    var responsiveNav = document.getElementById("responsive-nav");
+    responsiveNav.classList.toggle("displayNone")
 }
