@@ -33,6 +33,7 @@ window.onload = (event) => {
     addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-left', 'translate-x-animation-trigger');
+	setTimeout(hideSpinner, 2000)
 };
 
 
@@ -156,4 +157,10 @@ const toggleResponsiveSubMenu = (element) => {
 const toggleResponsiveNav = () => {
     var responsiveNav = document.getElementById("responsive-nav");
     responsiveNav.classList.toggle("displayNone")
+}
+
+const hideSpinner = () => {
+  	const spinner = document.getElementById("spinner");
+	spinner.style.animation = 'opesity-decrease 1s';
+	setTimeout(() => {spinner.style.opacity = 0; spinner.style.display = 'none';} , 1000)
 }
