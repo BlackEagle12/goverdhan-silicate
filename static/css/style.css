@@ -394,10 +394,9 @@ a {
     justify-content: space-evenly;
     background-image: url("../photos/footer/footer-bg.png");
     background-color: #cdece1;
-    padding: 50px 0;
+    padding: 50px;
     color: #cccccc;
     flex-wrap: wrap;
-
 }
 
 .contact-section {
@@ -414,12 +413,12 @@ a {
     font-size: 20px;
 }
 
-.contact-section .description {
+.footer-section .description{
     font-size: 13px;
     font-weight: 900;
     line-height: 25px;
     letter-spacing: 1px;
-    width: 80%;
+    
 }
 
 .quick-link {
@@ -1110,19 +1109,51 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    .loading-spinner{
+    background-image: url(../photos/footer/footer-bg.png);
+
+    img{
         content:"";
         position:fixed;
-        width:120px;
-        height:120px;
-        background-color:rgba(0,0,0,0);
-        border-radius:100%;
-        margin:15px;
-        box-shadow: 0 4px 0 0 #000;
-        transition: all 1s linear;
-        animation: lds-eclipse 0.5s linear infinite;
+        animation: spinning 0.5s linear infinite;
     }
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.footer-section .social-media-logos{
+    font-size: 30px;
+}
+
+.footer-section .social-media-logos i{
+    margin: 15px;
+}
+
+.footer-section-content{
+    max-width: 80%;
+}
+
+.social-media-logos i:hover{
+    color: #3755a0;
+}
+
+.footer-section .product li{
+    margin: 20px 0;
+}
+
+.footer-section a{
+    color: #cccccc;
 }
 
 @keyframes opesity-decrease {
@@ -1130,9 +1161,9 @@ input[type=number] {
 }
 
 @keyframes spinning {
-    0% { transform: translate(-50%,-50%) scale(1) translateZ(0);}
-    50% { transform: translate(-50%,-50%) scale(1.1) translateZ(0);}
-    100% { transform: translate(-50%,-50%) scale(1) translateZ(0);}
+    0% { transform: scale(1) translateZ(0);}
+    50% { transform: scale(1.1) translateZ(0);}
+    100% { transform: scale(1) translateZ(0);}
 }
 
 @keyframes lds-eclipse {
@@ -1449,6 +1480,10 @@ input[type=number] {
     }
     
     .captcha {
+        width: 100%;
+    }
+
+    .footer-section{
         width: 100%;
     }
 }

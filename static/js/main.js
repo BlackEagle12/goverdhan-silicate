@@ -3,18 +3,27 @@ var productSilderImages = [2,3,4,5];
 var currentProductSilderImage = 0
 
 changeSliderImage = () => {
-    var slider = document.getElementById("slider");
+	var slider = document.getElementById("slider");
+	let wlcmMsgMain = document.getElementById("wlcm-msg-main")
+	let wlcmMsgSub = document.getElementById("wlcm-msg-sub")
 
-    var circelimg = document.getElementById("circelimg" + currentImage);
-    circelimg.classList.remove("bgBlack");
-    
-    var imgNo = currentImage == 3 ? 1 : currentImage + 1;
-    currentImage = imgNo;
-    
-    circelimg = document.getElementById("circelimg" + currentImage);
-    circelimg.classList.add("bgBlack");
+	var circelimg = document.getElementById("circelimg" + currentImage);
+	circelimg.classList.remove("bgBlack");
 
-    slider.style.backgroundImage = "url('static/photos/slider/sd-" + imgNo + ".jpg')";
+	var imgNo = currentImage == 3 ? 1 : currentImage + 1;
+	currentImage = imgNo;
+	if(currentImage == 1){
+		wlcmMsgMain.style.display = "unset"
+		wlcmMsgSub.style.display = "unset"
+	}
+	else{
+		wlcmMsgMain.style.display = "none"
+		wlcmMsgSub.style.display = "none"
+	}
+	circelimg = document.getElementById("circelimg" + currentImage);
+	circelimg.classList.add("bgBlack");
+
+	slider.style.backgroundImage = "url('static/photos/slider/sd-" + imgNo + ".jpg')";
 }
 
 changeProductSliderImage = () => {
