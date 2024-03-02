@@ -42,7 +42,8 @@ window.onload = (event) => {
     addIntersectionObserver('.animation-translate-y-animate-down', 'translate-y-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-right', 'translate-x-animation-trigger');
     addIntersectionObserver('.animation-translate-x-animate-left', 'translate-x-animation-trigger');
-	setTimeout(hideSpinner, 2000)
+	// setTimeout(hideSpinner, 1000)
+	hideSpinner()
 };
 
 
